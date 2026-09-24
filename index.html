@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EnergiKita</title>
+    <meta
+      name="description"
+      content="Ajakan hemat energi buat warga sekolah. Mulai dari kebiasaan kecil."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="hd" id="barAtas">
+      <div class="hd-in">
+        <a href="index.html" class="logo">
+          <span class="logo-ico" aria-hidden="true"
+            ><svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"
+              /></svg
+          ></span>
+          <span>EnergiKita</span>
+        </a>
+
+        <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html" class="aktif">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kenapa.html">Kenapa Energi</a></li>
+            <li><a href="#data-fakta">Data &amp; Fakta</a></li>
+          </ul>
+          <a class="nav-cta" href="tentang.html">Mulai Aksi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-w" id="jalur">
+          <div class="hsl hsl-bg1 aktif">
+            <div class="hsl-ovl"></div>
+            <div class="hero-cnt">
+              <span class="hero-tag">Kampanye Hemat Energi Sekolah</span>
+              <h1>Matikan yang tak perlu,<br />selamatkan bumi.</h1>
+              <p class="hero-p">
+                Satu kebiasaan kecil setiap hari bisa mengubah tagihan listrik
+                sekolah, dan iklim kita.
+              </p>
+              <div class="hero-btns">
+                <a href="tentang.html" class="btn btn-gold">Mulai Aksi</a
+                ><a href="#kenapa" class="btn-link">Pelajari dulu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hsl hsl-bg2">
+            <div class="hsl-ovl"></div>
+            <div class="hero-cnt">
+              <span class="hero-tag">Langkah Kecil, Dampak Besar</span>
+              <h1>Satu lampu dimatikan,<br />satu langkah untuk bumi.</h1>
+              <p class="hero-p">
+                Hemat energi bukan imbauan, ini tindakan yang bisa dimulai hari
+                ini, dari ruang kelas kita.
+              </p>
+              <div class="hero-btns">
+                <a class="btn btn-gold" href="tentang.html">Mulai Sekarang</a>
+                <a href="#kenapa" class="btn-link">Lihat alasannya</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hsl hsl-bg3">
+            <div class="hsl-ovl"></div>
+            <div class="hero-cnt">
+              <span class="hero-tag">Aksi Bersama Warga Sekolah</span>
+              <h1>Energi hemat,<br />sekolah hebat.</h1>
+              <p class="hero-p">
+                Keputusan kita bersama, berdasarkan data, bukan asumsi. Mari
+                mulai dari sekarang.
+              </p>
+              <div class="hero-btns">
+                <a href="tentang.html" class="btn btn-gold">Bergabung</a
+                ><a href="#tujuan" class="btn-link">Tujuan kami</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-ftr">
+          <div class="ftr-in">
+            <div class="ctrl">
+              <div class="dots" id="titikList"></div>
+              <button class="arw-prev" aria-label="Sebelumnya">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button class="arw-next" aria-label="Berikutnya">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+              <span class="slide-num"
+                ><span id="nomorSekarang">1</span><span class="sn-sep">/</span
+                ><span id="nomorTotal">3</span></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-1" id="kenapa" data-bagian="01">
+        <div class="sect-in">
+          <div class="tag-row">
+            <span class="tag-num">01</span>
+            <span class="tag-lbl">Kenapa Ini Penting</span>
+          </div>
+
+          <div class="sh">
+            <h2 class="sh-t">Kenapa hemat energi penting?</h2>
+            <p class="sh-p">
+              Pemborosan energi sering terjadi tanpa kita sadari. Di rumah, di
+              kelas, bahkan di lorong sekolah yang sepi. Padahal dampaknya
+              nyata, baik untuk lingkungan maupun tagihan listrik yang kita
+              tanggung bersama.
+            </p>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-c">
+              <div class="sc-top">
+                <span class="sc-num">~20%</span>
+                <svg
+                  class="sc-ico"
+                  viewBox="0 0 24 24"
+                  width="26"
+                  height="26"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 20V10M12 20V4M6 20v-6" />
+                </svg>
+              </div>
+              <p>
+                Energi listrik di gedung publik sering terbuang karena peralatan
+                tetap menyala saat tidak dipakai.
+              </p>
+            </div>
+
+            <div class="stat-c">
+              <div class="sc-top">
+                <span class="sc-num">1 lampu</span>
+                <svg
+                  class="sc-ico"
+                  viewBox="0 0 24 24"
+                  width="26"
+                  height="26"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"
+                  />
+                </svg>
+              </div>
+              <p>
+                Lampu yang nyala terus di ruang kosong kelihatan sepele, tapi
+                kalau dibiarkan tiap hari borosnya menumpuk.
+              </p>
+            </div>
+
+            <div class="stat-c">
+              <div class="sc-top">
+                <span class="sc-num">Bumi kita</span>
+                <svg
+                  class="sc-ico"
+                  viewBox="0 0 24 24"
+                  width="26"
+                  height="26"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </div>
+              <p>
+                Energi yang dihemat sama dengan emisi karbon yang berkurang.
+                Sesederhana itu.
+              </p>
+            </div>
+          </div>
+
+          <div class="end-row">
+            <a href="kenapa.html" class="btn btn-gold">Pelajari Lebih Lanjut</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect-2" id="tujuan">
+        <div class="sect-in">
+          <div class="tag-row">
+            <span class="tag-num">02</span>
+            <span class="tag-lbl">Tujuan Kami</span>
+          </div>
+
+          <div class="sh">
+            <h2 class="sh-t">Apa yang ingin kami capai?</h2>
+            <p class="sh-p">
+              EnergiKita bukan sekadar tugas sekolah, ini ajakan nyata supaya
+              kebiasaan hemat energi tertanam di lingkungan kita.
+            </p>
+          </div>
+
+          <ul class="msn-list">
+            <li>
+              <span class="msn-ico"
+                ><svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                  /></svg
+              ></span>
+              <div>
+                <h3>Menumbuhkan kebiasaan hemat energi</h3>
+                <p>
+                  Mengajak siswa, guru, dan staf untuk mematikan alat listrik
+                  saat tidak digunakan.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="msn-ico"
+                ><svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 3v18h18" />
+                  <path d="M7 16l4-4 4 4 6-6" /></svg
+              ></span>
+              <div>
+                <h3>Membuktikan lewat data, bukan asumsi</h3>
+                <p>
+                  Menunjukkan kondisi nyata penggunaan energi di sekolah
+                  berdasarkan data yang dikumpulkan.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="msn-ico"
+                ><svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path
+                    d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+                  /></svg
+              ></span>
+              <div>
+                <h3>Mengajak aksi bersama</h3>
+                <p>
+                  Memberi langkah konkret yang bisa langsung dilakukan setiap
+                  warga sekolah.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="data-fakta" class="teaser">
+        <div class="sect-in">
+          <div class="teaser-c">
+            <div class="dec dec-c1" aria-hidden="true"></div>
+            <div class="dec dec-c2" aria-hidden="true"></div>
+            <div class="dec dec-c3" aria-hidden="true"></div>
+
+            <div class="teaser-txt">
+              <span class="badge-soon">Segera Hadir</span>
+              <h2>Penasaran seberapa boros energi di sekolah kita?</h2>
+              <p>
+                Halaman Data &amp; Fakta sedang disiapkan. Nantinya kamu bisa
+                lihat grafik nyata dari hasil angket dan observasi warga
+                sekolah, jadi ajakan ini bukan cuma kata-kata.
+              </p>
+              <a href="tentang.html" class="btn btn-outline"
+                >Kenali Kampanye Dulu</a
+              >
+            </div>
+
+            <div class="teaser-img">
+              <img
+                src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80"
+                alt="Panel surya"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ftr">
+      <div class="foot-in">
+        <div class="ftr-col">
+          <p class="ftr-logo">EnergiKita</p>
+          <p>Kelompok 1 · Kelas [Kelas]</p>
+        </div>
+        <div class="ftr-col">
+          <p>Proyek ESD (Education for Sustainable Development)</p>
+        </div>
+      </div>
+      <div class="ftr-copy">© 2026 EnergiKita.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
