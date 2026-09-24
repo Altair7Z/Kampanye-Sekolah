@@ -308,13 +308,13 @@ a {
 }
 
 .hsl-bg1 {
-  background-image: url("https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80");
+  background-image: url("../assets/hero-1.jpg");
 }
 .hsl-bg2 {
-  background-image: url("https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1920&q=80");
+  background-image: url("../assets/hero-2.jpg");
 }
 .hsl-bg3 {
-  background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80");
+  background-image: url("../assets/hero-3.jpg");
 }
 
 .hsl.aktif {
@@ -917,14 +917,16 @@ a {
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  background: #d8f3dc;
+  background: #D8F3DC;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow: hidden
 }
-.illus-c svg {
-  width: 82%;
-  height: 82%;
+.illus-c img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%
 }
 
 .id-card {
