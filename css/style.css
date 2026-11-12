@@ -216,10 +216,9 @@ a {
   transform: translateY(-1px);
 }
 
-.hal-tentang .hd,
-.hal-kenapa .hd {
-  background: #1b4332;
-  border-bottom-color: rgba(251, 247, 236, 0.1);
+.hal-tentang .hd, .hal-kenapa .hd, .hal-data .hd {
+  background: #1B4332;
+  border-bottom-color: rgba(251,247,236,.1)
 }
 
 /* TOMBOL — 3 varian: gold (isi), link (underline), outline (garis) */
@@ -760,6 +759,12 @@ a {
   width: fit-content;
 }
 
+.badge-live {
+  background: rgba(64, 145, 108, 0.9); /* Warna hijau daun */
+  border-color: #1B4332;
+  color: #FBF7EC;
+}
+
 .teaser-txt h2 {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
   margin: 0 0 12px;
@@ -776,15 +781,40 @@ a {
   font-size: 0.94rem;
   line-height: 1.6;
 }
-.teaser-txt .btn-outline {
-  border-color: rgba(251, 247, 236, 0.75);
-  color: #fbf7ec;
-  width: fit-content;
+.teaser-txt .btn-outline { 
+  border-color: rgba(251,247,236,.75); 
+  color: #fbf7ec; 
+  width: fit-content 
 }
 .teaser-txt .btn-outline:hover {
   background: #fbf7ec;
   color: #40916c;
   border-color: #fbf7ec;
+}
+
+/* Wadah untuk menyejajarkan tombol di dalam teaser */
+.teaser-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* Memastikan tombol di teaser tidak melebar penuh */
+.teaser-btns .btn {
+  width: fit-content;
+}
+
+/* Menyesuaikan warna tombol outline di background hijau */
+.teaser-btns .btn-outline {
+  border-color: rgba(251,247,236, 0.7);
+  color: #FBF7EC;
+}
+
+.teaser-btns .btn-outline:hover {
+  background: #FBF7EC;
+  color: #40916C;
+  border-color: #FBF7EC;
 }
 
 .teaser-img {
@@ -1316,4 +1346,150 @@ a {
 .hal-kenapa .why-c:nth-child(3),
 .hal-kenapa .why-c:nth-child(4) {
   padding-bottom: 28px;
+}
+
+/* =========================================
+   DATA & FAKTA (Chart Page)
+   ========================================= */
+
+/* Fix: jarak konten dengan navbar fixed */
+.hal-tentang main, .hal-kenapa main, .hal-data main { 
+  padding-top: 68px; 
+}
+/* Ringkasan Metadata (Sumber, Responden, dll) */
+.meta-info {
+  background: #fff;
+  border: 1px solid #dcd5c2;
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  font-size: 0.9rem;
+  color: #4B5347;
+  line-height: 1.6;
+}
+.meta-info strong { color: #1B4332; }
+
+/* Grid Ringkasan Angka Utama (Rata-rata, Responden) */
+.sum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.sum-c {
+  background: #1B4332;
+  color: #FBF7EC;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+}
+
+.sum-num {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #E4A11B;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.sum-lbl {
+  font-size: 0.95rem;
+  color: rgba(251,247,236,0.8);
+}
+
+/* Grid Insight (Butir Tertinggi, Terendah, Jurusan) */
+.insight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.insight-c {
+  background: #FBF7EC;
+  border: 1px solid #dcd5c2;
+  border-left: 4px solid #40916C;
+  border-radius: 0 14px 14px 0;
+  padding: 20px;
+}
+
+.insight-c.insight-low {
+  border-left-color: #E4A11B;
+}
+
+.insight-t {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4B5347;
+  margin: 0 0 10px;
+}
+
+.insight-val {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0 0 4px;
+}
+
+.insight-desc {
+  font-size: 0.9rem;
+  color: #4B5347;
+  margin: 0;
+}
+
+/* Grid Layout untuk Chart */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.chart-c {
+  background: #fff;
+  border: 1px solid #dcd5c2;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.chart-c.span-2 {
+  grid-column: span 2;
+}
+
+.chart-t {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0 0 6px;
+}
+
+.chart-desc {
+  font-size: 0.9rem;
+  color: #4B5347;
+  margin: 0 0 24px;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 320px;
+  width: 100%;
+}
+
+.chart-wrap.chart-horizontal {
+  height: 400px; /* lebih tinggi buat chart horizontal */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sum-grid { grid-template-columns: 1fr; }
+  .insight-grid { grid-template-columns: 1fr; }
+  .chart-grid { grid-template-columns: 1fr; }
+  .chart-c.span-2 { grid-column: span 1; }
+  .chart-wrap { height: 280px; }
 }
